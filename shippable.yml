@@ -18,25 +18,11 @@ env:
 
 build:
   pre_ci:
-    - docker build -t=shippabledocker/sample-node-test .
-
-  pre_ci_boot:
-    image_name: shippabledocker/sample-node-test
-    image_tag: latest
-    pull: false
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-
+    - echo "pre-ci"
 
   ci:
     - ps -eax
     - ls -al
     - sleep 6m
 
-  post_ci:
-    - docker push shippabledocker/sample-node-test
-
-integrations:
-  hub:
-    - integrationName: ship-docker
-      type: docker
-      
+  
