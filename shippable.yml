@@ -15,7 +15,6 @@ env:
     - M2=two
     - M3=three
 
-
 build:
   pre_ci:
     - echo "pre-ci"
@@ -23,6 +22,4 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - sleep 6m
-
-  
+    - sleep 88888888
