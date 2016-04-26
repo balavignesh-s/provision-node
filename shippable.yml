@@ -22,4 +22,4 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - sleep 88888888
+   # - sleep 88888888
