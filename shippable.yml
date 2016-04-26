@@ -12,8 +12,8 @@ env:
 
   matrix:
     - M1=one
-    - M2=two
-    - M3=three
+  #  - M2=two
+   # - M3=three
 
 build:
   pre_ci:
